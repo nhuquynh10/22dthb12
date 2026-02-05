@@ -13,7 +13,7 @@ namespace WebApplication1.Controllers
         {
             int x = 1;
             int tong = x + 2;
-            Console.log("tong:" + tong);
+            Console.WriteLine("tong:" + tong);
             _logger = logger1;
             //che them code
 
