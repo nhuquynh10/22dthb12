@@ -7,10 +7,16 @@ namespace WebApplication1.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IConfiguration configuration;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger1,IConfiguration configuration)
         {
-            _logger = logger;
+            int x = 1;
+            int tong = x + 2;
+            Console.WriteLine("tong:" + tong);
+            _logger = logger1;
+            //che them code
+
         }
 
         public IActionResult Index()
